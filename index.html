@@ -1,0 +1,95 @@
+<html>
+    <head>
+        <title>Medium Clone</title>
+        <link rel="stylesheet" href="medium-clone.css">
+        <script src="medium-clone.js"></script>
+    </head>
+    <body>
+        <header>
+            <div class="header-child"><img src="https://img.icons8.com/ios-filled/45/000000/medium-monogram--v1.png"/>
+            </div>
+            <div class="header-right-panel">
+              
+          <!--    search icon  svg-->
+              <svg class="header-right-panel__child" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+          width="24" height="24"
+          viewBox="0 0 172 172"
+          style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#666666"><path d="M73.45833,21.5c-28.63214,0 -51.95833,23.32621 -51.95833,51.95833c0,28.63212 23.32619,51.95833 51.95833,51.95833c12.38529,0 23.77079,-4.37509 32.71191,-11.64583l35.15446,35.15446c1.34815,1.40412 3.35005,1.96971 5.23364,1.47866c1.88359,-0.49105 3.35456,-1.96202 3.84561,-3.84561c0.49105,-1.88359 -0.07455,-3.88549 -1.47866,-5.23364l-35.15446,-35.15446c7.27074,-8.94112 11.64583,-20.32663 11.64583,-32.71191c0,-28.63212 -23.32619,-51.95833 -51.95833,-51.95833zM73.45833,32.25c22.82242,0 41.20833,18.38593 41.20833,41.20833c0,11.11769 -4.38529,21.16215 -11.49886,28.56169c-0.43849,0.32229 -0.8255,0.7093 -1.14779,1.14779c-7.39953,7.11357 -17.44399,11.49886 -28.56169,11.49886c-22.82242,0 -41.20833,-18.38593 -41.20833,-41.20833c0,-22.8224 18.38591,-41.20833 41.20833,-41.20833z"></path></g></g></svg>
+              
+          <!--     notification icon svg -->
+              <svg class="header-right-panel__child" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+          width="24" height="24"
+          viewBox="0 0 172 172"
+          style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#666666"><path d="M83.41048,14.39632c-28.9658,1.36432 -51.16048,26.25083 -51.16048,55.05176v26.04216l-9.49723,19.10644c-0.01671,0.03482 -0.03304,0.06981 -0.04899,0.10498c-3.82075,8.12522 2.36418,17.88167 11.34489,17.88167h30.45133c0,11.81018 9.68982,21.5 21.5,21.5c11.81018,0 21.5,-9.68982 21.5,-21.5h30.44434c8.98071,0 15.17358,-9.75445 11.35189,-17.88167c-0.01595,-0.03517 -0.03228,-0.07016 -0.04899,-0.10498l-9.49723,-19.10644v-27.4069c0,-30.48056 -25.57321,-55.13544 -56.33952,-53.68701zM83.91439,25.13232c24.79686,-1.1674 45.08561,18.4489 45.08561,42.95101v28.66667c-0.00075,0.83039 0.1909,1.64966 0.5599,2.39356l10.00814,20.14225c0.64359,1.37942 -0.10106,2.54753 -1.6237,2.54753h-103.89567c-1.52265,0 -2.26126,-1.16611 -1.6167,-2.54753v-0.007l10.00814,-20.13525c0.369,-0.7439 0.56064,-1.56317 0.5599,-2.39356v-27.30192c0,-23.29357 17.84301,-43.22907 40.91439,-44.31575zM75.25,132.58333h21.5c0,5.99898 -4.75102,10.75 -10.75,10.75c-5.99898,0 -10.75,-4.75102 -10.75,-10.75z"></path></g></g></svg>
+              
+              <button class="upgrade-button header-right-panel__child">Upgrade</button>
+              
+          <!--     profile-pic link -->
+              
+              <img class="profile-pic header-right-panel__child" src="data:image/jpeg;base64,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">
+              
+          <!--     profile-pic link end -->
+              
+              
+            </div>
+          </header>
+          
+          <hr class="header-end-separation">
+          
+          <!-- Header 1 ends here -->
+          
+          <!-- header 2 starts here -->
+          
+          <div class="header-2">
+            <ul class="tech-topics">
+              <li class="topic-item">JavaScript</li>
+              <li class="topic-item">React</li>
+              <li class="topic-item">HTML & CSS</li>
+              <li class="topic-item">Backend</li>
+            </ul>
+          </div>
+          <!-- header 2 ends here -->
+          
+          
+          <!-- header -2 ends -->
+          
+          
+          <div class="content">
+            <h1 class="blog-title">Sample Blog on Lorem Ipsum</h1>
+          
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde iste dolor quam in repellat aliquam distinctio, reprehenderit necessitatibus incidunt ratione sit voluptates nesciunt recusandae earum accusantium! Magnam eius corporis possimus!
+              Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus, modi ipsa soluta, enim magni iure, sapiente exercitationem aut quo omnis expedita? Quibusdam necessitatibus mollitia commodi quo iure ex autem est?</p>
+            <p class="sub-title">
+              Dummy sub-title-I
+            </p><p>adipisicing elit. Laboriosam magnam odio cumque cupiditate tenetur dolore neque! Itaque, est dolorem in provident voluptatem vero ratione tempora natus eius eum modi iusto?Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde iste dolor quam in repellat aliquam distinctio, reprehenderit necessitatibus incidunt ratione sit voluptates nesciunt recusandae earum accusantium! Magnam eius corporis possimus!
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia assumenda dignissimos sequi inventore architecto quibusdam asperiores tempora, provident eius itaque, ipsum maxime, nam corporis in expedita numquam pariatur illum suscipit.</p>
+            <p class="sub-title">
+              Dummy sub-title-II
+            </p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam magnam odio cumque cupiditate tenetur dolore neque! Itaque, est dolorem in provident voluptatem vero ratione tempora natus eius eum modi iusto?Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde iste dolor quam in repellat aliquam distinctio, reprehenderit necessitatibus incidunt ratione sit voluptates nesciunt recusandae earum accusantium! Magnam eius corporis possimus!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam magnam odio cumque cupiditate tenetur dolore neque! Itaque, est dolorem in provident voluptatem vero ratione tempora natus eius eum modi iusto?Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde iste dolor quam in repellat aliquam distinctio, reprehenderit necessitatibus incidunt ratione sit voluptates nesciunt recusandae earum accusantium! Magnam eius corporis possimus!
+            </p><p class="sub-title">
+              Dummy sub-title-III
+            </p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam magnam odio cumque cupiditate tenetur dolore neque! Itaque, est dolorem in provident voluptatem vero ratione tempora natus eius eum modi iusto?Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde iste dolor quam in repellat aliquam distinctio, reprehenderit necessitatibus incidunt ratione sit voluptates nesciunt recusandae earum accusantium! Magnam eius corporis possimus!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam magnam odio cumque cupiditate tenetur dolore neque! Itaque, est dolorem in provident voluptatem vero ratione tempora natus eius eum modi iusto?Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde iste dolor quam in repellat aliquam distinctio, reprehenderit necessitatibus incidunt ratione sit voluptates nesciunt recusandae earum accusantium! Magnam eius corporis possimus!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam magnam odio cumque cupiditate tenetur dolore neque! Itaque, est dolorem in provident voluptatem vero ratione tempora natus eius eum modi iusto?Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde iste dolor quam in repellat aliquam distinctio, reprehenderit necessitatibus incidunt ratione sit voluptates nesciunt recusandae earum accusantium! Magnam eius corporis possimus!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam magnam odio cumque cupiditate tenetur dolore neque! Itaque, est dolorem in provident voluptatem vero ratione tempora natus eius eum modi iusto?</p>
+          </div>
+          <div class="nav">
+            <div class="description">
+            <h3>Let's Dev it</h3>
+            <p>My personal blog to keep all the frontend knowledge..</p>
+              </div>
+            <button class="nav-follow follow-button">Follow</button>
+            <hr class="separation">
+            <div class="icons">
+              <div class="child-icon"><img class="like-icon" src="https://img.icons8.com/ios/30/000000/applause.png"/><p class="like-counter">0</p></div>
+              <div class="child-icon"><img class="comment-icon" src="https://img.icons8.com/metro/24/000000/topic.png"/><p class="comment-counter">0</p></div>
+              <div class="child-icon"><img class="save-icon"  src="https://img.icons8.com/fluent-systems-regular/26/000000/bookmark-ribbon.png"/>
+              <svg class="saved-icon" style="display:none;" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+          width="24" height="24"
+          viewBox="0 0 172 172"
+          style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#000000"><path d="M130.79167,154.08333c-1.10725,0 -2.20733,-0.34042 -3.139,-1.01408l-41.65267,-29.98892l-41.65267,29.98892c-1.64117,1.17892 -3.79833,1.34375 -5.59358,0.42283c-1.79167,-0.91733 -2.92042,-2.76633 -2.92042,-4.78375v-107.5c0,-12.84267 10.449,-23.29167 23.29167,-23.29167h53.75c12.84267,0 23.29167,10.449 23.29167,23.29167v107.5c0,2.01742 -1.12875,3.86642 -2.924,4.78375c-0.774,0.39417 -1.6125,0.59125 -2.451,0.59125z"></path></g></g></svg></div>
+            </div>
+          </div>
+    </body>
+</html>
